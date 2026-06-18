@@ -66,13 +66,14 @@ export default function TemplateThumbnail({ templateId, themeColor, fontFamily =
   };
 
   return (
-    <div className="w-full h-full overflow-hidden flex items-start justify-center bg-gray-100 pointer-events-none select-none">
+    <div className="w-full h-full overflow-hidden flex items-start justify-center bg-gray-100 pointer-events-none select-none relative">
       <div 
-        className="origin-top bg-white shadow-sm"
+        className="bg-white shadow-sm absolute top-4"
         style={{
           width: "210mm",
           minHeight: "297mm",
           transform: "scale(0.25)",
+          transformOrigin: "top center",
           "--theme-color": themeColor,
           "--font-family": `"${fontFamily}", sans-serif`
         } as React.CSSProperties}

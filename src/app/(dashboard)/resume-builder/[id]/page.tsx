@@ -57,8 +57,8 @@ export default function ResumeBuilderPage({ params }: { params: { id: string } }
         </section>
 
         {/* Right Pane: Live Preview */}
-        <section className="w-1/2 h-full overflow-y-auto bg-transparent rounded-2xl flex justify-center items-start pt-4 pb-12">
-          <div ref={previewRef} className="w-[210mm] min-h-[297mm] bg-white shadow-2xl rounded-sm ring-1 ring-black/5 transition-all hover:-translate-y-1 hover:shadow-primary/10 duration-500">
+        <section className="w-1/2 h-full overflow-y-auto overflow-x-auto bg-transparent rounded-2xl flex justify-center items-start pt-4 pb-12">
+          <div ref={previewRef} className="w-[210mm] min-h-[297mm] shrink-0 bg-white shadow-2xl rounded-sm ring-1 ring-black/5 transition-all hover:-translate-y-1 hover:shadow-primary/10 duration-500">
             <LivePreview />
           </div>
         </section>
